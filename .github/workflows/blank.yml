@@ -32,7 +32,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Codacy Test
-        run: for i in {1.1000};do curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com && curl -XGET https://artifacts.codacy.com; done
-
+        run: for i in {1.1000};do curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 ;done
+      
+      - name: Codacy Test2
+        run: for i in {1.1000};do curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 && curl -XGET https://artifacts.codacy.com;sleep 5 ;done
+      
+      
       # Runs a set of commands using the runners shell
 
